@@ -10,14 +10,12 @@ public class Dots : MonoBehaviour
 
     public void OnMouseDown()
     {
-        if (m_Referee.m_isObj1Selected == false)
-        {
+        if (m_Referee.m_isObj1Selected == false) {
             m_Referee.m_Obj1 = gameObject;
             m_Referee.m_isObj1Selected = true;
             SpriteRenderer rend = m_Referee.m_Obj1.GetComponent<SpriteRenderer>();
             rend.color = Color.green;
-        } else if (m_Referee.m_isObj2Selected == false)
-        {
+        } else if (m_Referee.m_isObj2Selected == false) {
             m_Referee.m_Obj2 = gameObject;
             m_Referee.m_isObj2Selected = true;
             SpriteRenderer rend = m_Referee.m_Obj1.GetComponent<SpriteRenderer>();
